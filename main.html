@@ -9,12 +9,13 @@
 </head>
 
 <body>
-	<form action="/submit">
+	<form action="/submit" method="post">
      <label for="name">Name*:</label>	
 	<input type="text" name="name" value="" id="Name" placeholder="Enter your Name"><br><br>
 	<label for="Email">Email*:</label>
 	<input type="email" name="Email" value="" id="Email" placeholder="Enter Your Email"><br><br>
 	<label for="Gender">Gender*:</label><br>	
+	<input type="radio" name="Gender" value="" id="Male">	
 	<label for="MALE">Male</label>
 	<input type="radio" name="Gender" value="" id="Male">
 	<label for="FEMALE">Female</label>
@@ -27,13 +28,13 @@
 			<input type="text" value="" id="Car Brands" placeholder="-Please choose an option--">
 		</select><br><br>
 		<label for="Age">Age*:</label>
-     <input type="date" value="Age" id="Age" placeholder="Enter Your Age"><br><br>
+     <input type="date" name="Age" value="Age" id="Age" placeholder="Enter Your Age"><br><br>
 		<label for="tel">Phone Number*:</label>
      <input type="tel" value="" id="tel" placeholder="xxx-xxx-xxxx"><br><br>
 		<label for="Password">Password*:</label>
-<input type="password" value="" id="Password" placeholder="Enter Your Password"><br><br>
+<input type="password" value="" name="Password" id="Password" placeholder="Enter Your Password"><br><br>
 		<label for="Checkbox">I agree to the TOS*:</label>
-		<input type="checkbox"value="" id="Checkbox"><br><br>
+		<input type="checkbox" name="Checkbox"  value="" id="Checkbox"><br><br>
 		<button>Submit</button>
 	</form>
 
